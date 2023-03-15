@@ -54,16 +54,17 @@ routes.forEach((route) => {
                   headersToSet.forEach(({ header, value } = {}) => {
                     res.set(header, value);
                   });
-                  res.status(statusCode).send(payload);
+                  res.status(statusCode).send(paramValue.payload);
                 }
               })
             }
           })
+      } else{
+        headers.forEach(({ header, value } = {}) => {
+          res.set(header, value);
+        });
+        res.status(statusCode).send(payload);
       }
-      headers.forEach(({ header, value } = {}) => {
-        res.set(header, value);
-      });
-      res.status(statusCode).send(payload);
     });
   }
 });
