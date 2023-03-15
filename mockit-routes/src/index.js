@@ -46,17 +46,19 @@ routes.forEach((route) => {
     app[method](path, (req, res) => {
       if(queryParams) {
           queryParams.forEach((queryParam) =>{
-            const queryParamValue = req.query[queryParam.name];
-            if(!queryParamValue) {
-              queryParam.values.forEach((paramValue) => {
-                if(paramValue.value === queryParamValue) {
-                  const headersToSet = paramValue.headers ? paramValue.headers : headers;
-                  headersToSet.forEach(({ header, value } = {}) => {
-                    res.set(header, value);
-                  });
-                  res.status(statusCode).send(paramValue.payload);
-                }
-              })
+            let paramsMatch = true;
+            Object.keys(queryParam.query).forEach((key) => {
+              if(queryParam.query[key] !== req.query[key]) {
+                paramsMatch = false;
+                return;
+              }
+            });
+            if(paramsMatch) {
+              const headersToSet = queryParam.headers ? queryParam.headers : headers;
+              headersToSet.forEach(({ header, value } = {}) => {
+                res.set(header, value);
+              });
+              res.status(statusCode).send(queryParam.payload);
             }
           })
       } else{
