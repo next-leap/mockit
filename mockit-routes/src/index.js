@@ -14,10 +14,8 @@ const e = require('express');
 const data = fs.readJsonSync(
   path.resolve(__dirname, '../configuration/routes.json')
 );
-const {
-  routes,
-  settings: { features: { cors: corsFeature } = {} } = {}
-} = data;
+const { routes, settings: { features: { cors: corsFeature } = {} } = {} } =
+  data;
 
 app.use(basicAuth);
 app.use(delayMiddleware);
@@ -44,24 +42,26 @@ routes.forEach((route) => {
 
   if (!disabled) {
     app[method](path, (req, res) => {
-      if(queryParams) {
-          queryParams.forEach((queryParam) =>{
-            let paramsMatch = true;
-            Object.keys(queryParam.query).forEach((key) => {
-              if(queryParam.query[key] !== req.query[key]) {
-                paramsMatch = false;
-                return;
-              }
-            });
-            if(paramsMatch) {
-              const headersToSet = queryParam.headers ? queryParam.headers : headers;
-              headersToSet.forEach(({ header, value } = {}) => {
-                res.set(header, value);
-              });
-              res.status(statusCode).send(queryParam.payload);
+      if (queryParams) {
+        queryParams.forEach((queryParam) => {
+          let paramsMatch = true;
+          Object.keys(queryParam.query).forEach((key) => {
+            if (queryParam.query[key] !== req.query[key]) {
+              paramsMatch = false;
+              return;
             }
-          })
-      } else{
+          });
+          if (paramsMatch) {
+            const headersToSet = queryParam.headers
+              ? queryParam.headers
+              : headers;
+            headersToSet.forEach(({ header, value } = {}) => {
+              res.set(header, value);
+            });
+            res.status(statusCode).send(queryParam.payload);
+          }
+        });
+      } else {
         headers.forEach(({ header, value } = {}) => {
           res.set(header, value);
         });
