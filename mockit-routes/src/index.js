@@ -9,6 +9,7 @@ const port = process.env.PORT || 3000;
 const delayMiddleware = require('./middlewares/delay');
 const chaosMonkeyMiddleware = require('./middlewares/chaos-monkey');
 const basicAuth = require('./middlewares/basic-auth');
+const e = require('express');
 
 const data = fs.readJsonSync(
   path.resolve(__dirname, '../configuration/routes.json')
@@ -33,6 +34,7 @@ routes.forEach((route) => {
     route: path,
     statusCode,
     payload,
+    queryParams,
     disabled = false,
     httpMethod = 'GET',
     headers = []
@@ -42,6 +44,24 @@ routes.forEach((route) => {
 
   if (!disabled) {
     app[method](path, (req, res) => {
+      if(queryParams) {
+          let newHeaders = undefined;
+          let responsePayLoad = undefined;
+          queryParams.forEach((queryParam) =>{
+            const queryParamValue = req.qeury[queryParam.name];
+            if(!queryParamValue) {
+              queryParamValue.values.forEach((paramValue) => {
+                if(paramValue.value === queryParamValue) {
+                  const headersToSet = paramValue.headers ? paramValue.headers : headers;
+                  headersToSet.forEach(({ header, value } = {}) => {
+                    res.set(header, value);
+                  });
+                  res.status(statusCode).send(payload);
+                }
+              })
+            }
+          })
+      }
       headers.forEach(({ header, value } = {}) => {
         res.set(header, value);
       });

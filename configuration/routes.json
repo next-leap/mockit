@@ -15,31 +15,66 @@
     {
       "id": "6f935aa8-b629-4247-ba51-f02347b06e95",
       "route": "/user",
-      "httpMethod": "GET",
+      "httpMethod": "POST",
       "statusCode": "200",
       "delay": "0",
-      "payload": {
-        "name": "Jermain Spinka",
-        "username": "Agnes71",
-        "email": "Taurean.Huels55@hotmail.com",
-        "address": {
-          "street": "Kihn Inlet",
-          "suite": "Apt. 784",
-          "city": "South Doraside",
-          "zipcode": "91828",
-          "geo": {
-            "lat": "-56.8426",
-            "lng": "-122.9710"
-          }
-        },
-        "phone": "810-578-0341",
-        "website": "jewell.name",
-        "company": {
-          "name": "Quitzon, Wilderman and VonRueden",
-          "catchPhrase": "Realigned zero administration encoding",
-          "bs": "robust incubate synergies"
+      "queryParams": [
+        {
+          "name":"q",
+          "values": [
+            {
+              "value": "iphone",
+              "payload": {
+                "name": "iPhone Spinka",
+                "username": "Agnes71",
+                "email": "Taurean.Huels55@hotmail.com",
+                "address": {
+                  "street": "Kihn Inlet",
+                  "suite": "Apt. 784",
+                  "city": "South Doraside",
+                  "zipcode": "91828",
+                  "geo": {
+                    "lat": "-56.8426",
+                    "lng": "-122.9710"
+                  }
+                },
+                "phone": "810-578-0341",
+                "website": "jewell.name",
+                "company": {
+                  "name": "Quitzon, Wilderman and VonRueden",
+                  "catchPhrase": "Realigned zero administration encoding",
+                  "bs": "robust incubate synergies"
+                }
+              }
+            },
+            {
+              "value": "pixel",
+              "payload": {
+                "name": "Pixel Spinka",
+                "username": "Agnes71",
+                "email": "Taurean.Huels55@hotmail.com",
+                "address": {
+                  "street": "Kihn Inlet",
+                  "suite": "Apt. 784",
+                  "city": "South Doraside",
+                  "zipcode": "91828",
+                  "geo": {
+                    "lat": "-56.8426",
+                    "lng": "-122.9710"
+                  }
+                },
+                "phone": "810-578-0341",
+                "website": "jewell.name",
+                "company": {
+                  "name": "Quitzon, Wilderman and VonRueden",
+                  "catchPhrase": "Realigned zero administration encoding",
+                  "bs": "robust incubate synergies"
+                }
+              }
+            }
+          ]
         }
-      },
+      ],
       "disabled": false,
       "headers": [
         {
