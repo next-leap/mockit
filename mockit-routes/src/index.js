@@ -45,12 +45,10 @@ routes.forEach((route) => {
   if (!disabled) {
     app[method](path, (req, res) => {
       if(queryParams) {
-          let newHeaders = undefined;
-          let responsePayLoad = undefined;
           queryParams.forEach((queryParam) =>{
-            const queryParamValue = req.qeury[queryParam.name];
+            const queryParamValue = req.query[queryParam.name];
             if(!queryParamValue) {
-              queryParamValue.values.forEach((paramValue) => {
+              queryParam.values.forEach((paramValue) => {
                 if(paramValue.value === queryParamValue) {
                   const headersToSet = paramValue.headers ? paramValue.headers : headers;
                   headersToSet.forEach(({ header, value } = {}) => {
