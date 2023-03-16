@@ -12,7 +12,7 @@ const basicAuth = require('./middlewares/basic-auth');
 const e = require('express');
 
 const data = fs.readJsonSync(
-  path.resolve(__dirname, '../configuration/routes.json')
+  path.resolve(__dirname, './configuration/routes.json')
 );
 const { routes, settings: { features: { cors: corsFeature } = {} } = {} } =
   data;

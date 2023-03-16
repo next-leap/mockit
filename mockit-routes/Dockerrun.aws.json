@@ -1,0 +1,16 @@
+{
+  "AWSEBDockerrunVersion": "1",
+  "Authentication": {
+    "Bucket": "odin-docker",
+    "Key": "dockercfg"
+  },
+  "Image": {
+    "Name": "yournextleap/mockit-routes",
+    "Update": "true"
+  },
+  "Ports": [
+    {
+      "ContainerPort": "3080"
+    }
+  ]
+}
