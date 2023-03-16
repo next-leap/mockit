@@ -6,19 +6,11 @@ const cors = require('cors');
 
 const port = process.env.PORT || 3000;
 
-const delayMiddleware = require('./middlewares/delay');
-const chaosMonkeyMiddleware = require('./middlewares/chaos-monkey');
-const basicAuth = require('./middlewares/basic-auth');
-
 const data = fs.readJsonSync(
   path.resolve(__dirname, './configuration/routes.json')
 );
 const { routes, settings: { features: { cors: corsFeature } = {} } = {} } =
   data;
-
-app.use(basicAuth);
-app.use(delayMiddleware);
-app.use(chaosMonkeyMiddleware);
 
 if (corsFeature) {
   app.use(cors());
