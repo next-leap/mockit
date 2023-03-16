@@ -62,6 +62,9 @@ routes.forEach((route) => {
   }
 });
 
+app.get('/healthcheck', (req, res) => res.send("Hi. I'm Sandbox at Nextleap"));
+app.get('/', (req, res) => res.send("Hi. I'm Sandbox at Nextleap"));
+
 app.listen(port, () => console.log(`MockIt app listening on port ${port}!`));
 
 module.exports = app;
