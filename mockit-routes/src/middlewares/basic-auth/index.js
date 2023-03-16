@@ -2,7 +2,7 @@ const fs = require('fs-extra');
 const path = require('path');
 const auth = require('basic-auth');
 const data = fs.readJsonSync(
-  path.resolve(__dirname, '../../../configuration/routes.json')
+  path.resolve(__dirname, '../../configuration/routes.json')
 );
 const { settings } = data;
 const {

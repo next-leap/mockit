@@ -9,7 +9,6 @@ const port = process.env.PORT || 3000;
 const delayMiddleware = require('./middlewares/delay');
 const chaosMonkeyMiddleware = require('./middlewares/chaos-monkey');
 const basicAuth = require('./middlewares/basic-auth');
-const e = require('express');
 
 const data = fs.readJsonSync(
   path.resolve(__dirname, './configuration/routes.json')
@@ -71,10 +70,6 @@ routes.forEach((route) => {
   }
 });
 
-if (process.env.ENV !== 'test') {
-  server = app.listen(port, () =>
-    console.log(`MockIt app listening on port ${port}!`)
-  );
-}
+app.listen(port, () => console.log(`MockIt app listening on port ${port}!`));
 
 module.exports = app;
