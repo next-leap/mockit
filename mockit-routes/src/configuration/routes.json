@@ -287,6 +287,505 @@
       }
     },
     {
+      "id": "eee8d21d-e5a3-49c6-a7c6-381621ddb561",
+      "route": "/page/fetch",
+      "httpMethod": "GET",
+      "statusCode": "200",
+      "delay": "0",
+      "payload": {
+        "headerData": {
+          "title": {
+            "text": "Home"
+          },
+          "navigationTabs": [
+            {
+              "buttonText": "For You",
+              "iconPlacement": "RIGHT",
+              "actionUrl": "/"
+            },
+            {
+              "buttonText": "Following",
+              "iconPlacement": "RIGHT",
+              "actionUrl": "/"
+            }
+          ]
+        },
+        "loggedInUser": {
+          "userName": "Kartikey Sharma",
+          "userId": "Kartikey_1809",
+          "imageData": {
+            "url": "https://assets.nextleap.app/img/9708F944-928E-4DF0-BE77-9924B13CFA85-88d2f244-adc4-4428-9c79-7f9bd23363f8.JPG",
+            "alt": "kartikeya"
+          },
+          "blueTick": true,
+          "joiningDate": 1582140603000,
+          "following": 570,
+          "followers": 160,
+          "desc": "Finding Patterns in Chaos"
+        },
+        "sideNavigationButtons": [
+          {
+            "buttonText": "",
+            "iconPlacement": "LEFT",
+            "actionUrl": "/",
+            "icon": {
+              "url": "https://assets.nextleap.app/images/icons8-twitter.svg",
+              "alt": "twitter",
+              "aspX": 24.5,
+              "aspY": 24.5
+            }
+          },
+          {
+            "buttonText": "Home",
+            "iconPlacement": "LEFT",
+            "actionUrl": "/",
+            "icon": {
+              "url": "https://assets.nextleap.app/images/icons8-home.svg",
+              "alt": "home",
+              "aspX": 24.5,
+              "aspY": 24.5
+            }
+          },
+          {
+            "buttonText": "Explore",
+            "iconPlacement": "LEFT",
+            "actionUrl": "/",
+            "icon": {
+              "url": "https://assets.nextleap.app/images/tag.svg",
+              "alt": "explore",
+              "aspX": 24.5,
+              "aspY": 24.5
+            }
+          },
+          {
+            "buttonText": "Notifications",
+            "iconPlacement": "LEFT",
+            "actionUrl": "/",
+            "icon": {
+              "url": "https://assets.nextleap.app/images/notifications.svg",
+              "alt": "notification",
+              "aspX": 24.5,
+              "aspY": 24.5
+            }
+          },
+          {
+            "buttonText": "Messages",
+            "iconPlacement": "LEFT",
+            "actionUrl": "/",
+            "icon": {
+              "url": "https://assets.nextleap.app/images/mail.svg",
+              "alt": "messages",
+              "aspX": 24.5,
+              "aspY": 24.5
+            }
+          },
+          {
+            "buttonText": "Bookmarks",
+            "iconPlacement": "LEFT",
+            "actionUrl": "/",
+            "icon": {
+              "url": "https://assets.nextleap.app/images/bookmark.svg",
+              "alt": "bookmarks",
+              "aspX": 24.5,
+              "aspY": 24.5
+            }
+          },
+          {
+            "buttonText": "Profile",
+            "iconPlacement": "LEFT",
+            "actionUrl": "/",
+            "icon": {
+              "url": "https://assets.nextleap.app/images/person.svg",
+              "alt": "bookmarks",
+              "aspX": 24.5,
+              "aspY": 24.5
+            }
+          }
+        ],
+        "trendingData": {
+          "title": "What's happening",
+          "trends": [
+            {
+              "country": "India",
+              "text": "#SupremeCourt",
+              "tweets": 10400
+            },
+            {
+              "category": "Sports",
+              "text": "Gujrat Titans",
+              "hashTags": [
+                "#AavaDe",
+                "#ipl"
+              ]
+            },
+            {
+              "category": "Business & finance",
+              "text": "Must",
+              "tweets": 324000
+            },
+            {
+              "category": "Indian Premier League",
+              "text": "MSDhoni",
+              "hashTags": [
+                "#ChennaiSuperKings",
+                "#ipl"
+              ]
+            }
+          ]
+        },
+        "followData": {
+          "title": "Who to follow",
+          "usersToFollow": [
+            {
+              "userName": "Kartikey Sharma",
+              "userId": "Kartikey_1809",
+              "imageData": {
+                "url": "https://assets.nextleap.app/img/9708F944-928E-4DF0-BE77-9924B13CFA85-88d2f244-adc4-4428-9c79-7f9bd23363f8.JPG",
+                "alt": "kartikeya"
+              },
+              "blueTick": true,
+              "joiningDate": 1582140603000,
+              "following": 570,
+              "followers": 160,
+              "desc": "Finding Patterns in Chaos"
+            },
+            {
+              "userName": "Kartikey Sharma",
+              "userId": "Kartikey_1809",
+              "imageData": {
+                "url": "https://assets.nextleap.app/img/9708F944-928E-4DF0-BE77-9924B13CFA85-88d2f244-adc4-4428-9c79-7f9bd23363f8.JPG",
+                "alt": "kartikeya"
+              },
+              "blueTick": true,
+              "joiningDate": 1582140603000,
+              "following": 570,
+              "followers": 160,
+              "desc": "Finding Patterns in Chaos"
+            }
+          ]
+        },
+        "tweetThreads": [
+          [
+            {
+              "user": {
+                "userName": "Kartikey Sharma",
+                "userId": "Kartikey_1809",
+                "imageData": {
+                  "url": "https://assets.nextleap.app/img/9708F944-928E-4DF0-BE77-9924B13CFA85-88d2f244-adc4-4428-9c79-7f9bd23363f8.JPG",
+                  "alt": "kartikeya"
+                },
+                "blueTick": true,
+                "joiningDate": 1582140603000,
+                "following": 570,
+                "followers": 160,
+                "desc": "Finding Patterns in Chaos"
+              },
+              "tweetTime": 1678649733000,
+              "textArea": "It's the year 2021 and we still don't have flying cars.",
+              "replies": 10400,
+              "reTweets": 1100,
+              "views": 107000,
+              "likes": 506000
+            },
+            {
+              "user": {
+                "userName": "Kartikey Sharma",
+                "userId": "Kartikey_1809",
+                "imageData": {
+                  "url": "https://assets.nextleap.app/img/9708F944-928E-4DF0-BE77-9924B13CFA85-88d2f244-adc4-4428-9c79-7f9bd23363f8.JPG",
+                  "alt": "kartikeya"
+                },
+                "blueTick": true,
+                "joiningDate": 1582140603000,
+                "following": 570,
+                "followers": 160,
+                "desc": "Finding Patterns in Chaos"
+              },
+              "tweetTime": 1678649733000,
+              "textArea": "It's the year 2021 and we still don't have flying cars.",
+              "replies": 10400,
+              "reTweets": 1100,
+              "views": 107000,
+              "likes": 506000
+            }
+          ],
+          [
+            {
+              "user": {
+                "userName": "Kartikey Sharma",
+                "userId": "Kartikey_1809",
+                "imageData": {
+                  "url": "https://assets.nextleap.app/img/9708F944-928E-4DF0-BE77-9924B13CFA85-88d2f244-adc4-4428-9c79-7f9bd23363f8.JPG",
+                  "alt": "kartikeya"
+                },
+                "blueTick": true,
+                "joiningDate": 1582140603000,
+                "following": 570,
+                "followers": 160,
+                "desc": "Finding Patterns in Chaos"
+              },
+              "tweetTime": 1678649733000,
+              "textArea": "It's the year 2021 and we still don't have flying cars.",
+              "replies": 10400,
+              "reTweets": 1100,
+              "views": 107000,
+              "likes": 506000
+            },
+            {
+              "user": {
+                "userName": "Kartikey Sharma",
+                "userId": "Kartikey_1809",
+                "imageData": {
+                  "url": "https://assets.nextleap.app/img/9708F944-928E-4DF0-BE77-9924B13CFA85-88d2f244-adc4-4428-9c79-7f9bd23363f8.JPG",
+                  "alt": "kartikeya"
+                },
+                "blueTick": true,
+                "joiningDate": 1582140603000,
+                "following": 570,
+                "followers": 160,
+                "desc": "Finding Patterns in Chaos"
+              },
+              "tweetTime": 1678649733000,
+              "textArea": "It's the year 2021 and we still don't have flying cars.",
+              "replies": 10400,
+              "reTweets": 1100,
+              "views": 107000,
+              "likes": 506000
+            }
+          ],
+          [
+            {
+              "user": {
+                "userName": "Kartikey Sharma",
+                "userId": "Kartikey_1809",
+                "imageData": {
+                  "url": "https://assets.nextleap.app/img/9708F944-928E-4DF0-BE77-9924B13CFA85-88d2f244-adc4-4428-9c79-7f9bd23363f8.JPG",
+                  "alt": "kartikeya"
+                },
+                "blueTick": true,
+                "joiningDate": 1582140603000,
+                "following": 570,
+                "followers": 160,
+                "desc": "Finding Patterns in Chaos"
+              },
+              "tweetTime": 1678649733000,
+              "textArea": "It's the year 2021 and we still don't have flying cars.",
+              "replies": 10400,
+              "reTweets": 1100,
+              "views": 107000,
+              "likes": 506000
+            },
+            {
+              "user": {
+                "userName": "Kartikey Sharma",
+                "userId": "Kartikey_1809",
+                "imageData": {
+                  "url": "https://assets.nextleap.app/img/9708F944-928E-4DF0-BE77-9924B13CFA85-88d2f244-adc4-4428-9c79-7f9bd23363f8.JPG",
+                  "alt": "kartikeya"
+                },
+                "blueTick": true,
+                "joiningDate": 1582140603000,
+                "following": 570,
+                "followers": 160,
+                "desc": "Finding Patterns in Chaos"
+              },
+              "tweetTime": 1678649733000,
+              "textArea": "It's the year 2021 and we still don't have flying cars.",
+              "replies": 10400,
+              "reTweets": 1100,
+              "views": 107000,
+              "likes": 506000
+            }
+          ],
+          [
+            {
+              "user": {
+                "userName": "Kartikey Sharma",
+                "userId": "Kartikey_1809",
+                "imageData": {
+                  "url": "https://assets.nextleap.app/img/9708F944-928E-4DF0-BE77-9924B13CFA85-88d2f244-adc4-4428-9c79-7f9bd23363f8.JPG",
+                  "alt": "kartikeya"
+                },
+                "blueTick": true,
+                "joiningDate": 1582140603000,
+                "following": 570,
+                "followers": 160,
+                "desc": "Finding Patterns in Chaos"
+              },
+              "tweetTime": 1678649733000,
+              "textArea": "It's the year 2021 and we still don't have flying cars.",
+              "replies": 10400,
+              "reTweets": 1100,
+              "views": 107000,
+              "likes": 506000
+            },
+            {
+              "user": {
+                "userName": "Kartikey Sharma",
+                "userId": "Kartikey_1809",
+                "imageData": {
+                  "url": "https://assets.nextleap.app/img/9708F944-928E-4DF0-BE77-9924B13CFA85-88d2f244-adc4-4428-9c79-7f9bd23363f8.JPG",
+                  "alt": "kartikeya"
+                },
+                "blueTick": true,
+                "joiningDate": 1582140603000,
+                "following": 570,
+                "followers": 160,
+                "desc": "Finding Patterns in Chaos"
+              },
+              "tweetTime": 1678649733000,
+              "textArea": "It's the year 2021 and we still don't have flying cars.",
+              "replies": 10400,
+              "reTweets": 1100,
+              "views": 107000,
+              "likes": 506000
+            }
+          ],
+          [
+            {
+              "user": {
+                "userName": "Kartikey Sharma",
+                "userId": "Kartikey_1809",
+                "imageData": {
+                  "url": "https://assets.nextleap.app/img/9708F944-928E-4DF0-BE77-9924B13CFA85-88d2f244-adc4-4428-9c79-7f9bd23363f8.JPG",
+                  "alt": "kartikeya"
+                },
+                "blueTick": true,
+                "joiningDate": 1582140603000,
+                "following": 570,
+                "followers": 160,
+                "desc": "Finding Patterns in Chaos"
+              },
+              "tweetTime": 1678649733000,
+              "textArea": "It's the year 2021 and we still don't have flying cars.",
+              "replies": 10400,
+              "reTweets": 1100,
+              "views": 107000,
+              "likes": 506000
+            },
+            {
+              "user": {
+                "userName": "Kartikey Sharma",
+                "userId": "Kartikey_1809",
+                "imageData": {
+                  "url": "https://assets.nextleap.app/img/9708F944-928E-4DF0-BE77-9924B13CFA85-88d2f244-adc4-4428-9c79-7f9bd23363f8.JPG",
+                  "alt": "kartikeya"
+                },
+                "blueTick": true,
+                "joiningDate": 1582140603000,
+                "following": 570,
+                "followers": 160,
+                "desc": "Finding Patterns in Chaos"
+              },
+              "tweetTime": 1678649733000,
+              "textArea": "It's the year 2021 and we still don't have flying cars.",
+              "replies": 10400,
+              "reTweets": 1100,
+              "views": 107000,
+              "likes": 506000
+            }
+          ],
+          [
+            {
+              "user": {
+                "userName": "Kartikey Sharma",
+                "userId": "Kartikey_1809",
+                "imageData": {
+                  "url": "https://assets.nextleap.app/img/9708F944-928E-4DF0-BE77-9924B13CFA85-88d2f244-adc4-4428-9c79-7f9bd23363f8.JPG",
+                  "alt": "kartikeya"
+                },
+                "blueTick": true,
+                "joiningDate": 1582140603000,
+                "following": 570,
+                "followers": 160,
+                "desc": "Finding Patterns in Chaos"
+              },
+              "tweetTime": 1678649733000,
+              "textArea": "It's the year 2021 and we still don't have flying cars.",
+              "replies": 10400,
+              "reTweets": 1100,
+              "views": 107000,
+              "likes": 506000
+            },
+            {
+              "user": {
+                "userName": "Kartikey Sharma",
+                "userId": "Kartikey_1809",
+                "imageData": {
+                  "url": "https://assets.nextleap.app/img/9708F944-928E-4DF0-BE77-9924B13CFA85-88d2f244-adc4-4428-9c79-7f9bd23363f8.JPG",
+                  "alt": "kartikeya"
+                },
+                "blueTick": true,
+                "joiningDate": 1582140603000,
+                "following": 570,
+                "followers": 160,
+                "desc": "Finding Patterns in Chaos"
+              },
+              "tweetTime": 1678649733000,
+              "textArea": "It's the year 2021 and we still don't have flying cars.",
+              "replies": 10400,
+              "reTweets": 1100,
+              "views": 107000,
+              "likes": 506000
+            }
+          ],
+          [
+            {
+              "user": {
+                "userName": "Kartikey Sharma",
+                "userId": "Kartikey_1809",
+                "imageData": {
+                  "url": "https://assets.nextleap.app/img/9708F944-928E-4DF0-BE77-9924B13CFA85-88d2f244-adc4-4428-9c79-7f9bd23363f8.JPG",
+                  "alt": "kartikeya"
+                },
+                "blueTick": true,
+                "joiningDate": 1582140603000,
+                "following": 570,
+                "followers": 160,
+                "desc": "Finding Patterns in Chaos"
+              },
+              "tweetTime": 1678649733000,
+              "textArea": "It's the year 2021 and we still don't have flying cars.",
+              "replies": 10400,
+              "reTweets": 1100,
+              "views": 107000,
+              "likes": 506000
+            },
+            {
+              "user": {
+                "userName": "Kartikey Sharma",
+                "userId": "Kartikey_1809",
+                "imageData": {
+                  "url": "https://assets.nextleap.app/img/9708F944-928E-4DF0-BE77-9924B13CFA85-88d2f244-adc4-4428-9c79-7f9bd23363f8.JPG",
+                  "alt": "kartikeya"
+                },
+                "blueTick": true,
+                "joiningDate": 1582140603000,
+                "following": 570,
+                "followers": 160,
+                "desc": "Finding Patterns in Chaos"
+              },
+              "tweetTime": 1678649733000,
+              "textArea": "It's the year 2021 and we still don't have flying cars.",
+              "replies": 10400,
+              "reTweets": 1100,
+              "views": 107000,
+              "likes": 506000
+            }
+          ]
+        ],
+        "tweetButton": {
+          "buttonText": "Tweet",
+          "actionUrl": "/",
+          "iconPlacement": "RIGHT",
+          "bgColorData": {
+            "bgKey": "var(--twitter-blue)",
+            "dottedBorder": false
+          }
+        }
+      }
+    },
+    {
       "id": "6f935aa8-b629-4247-ba51-f02347b06e95",
       "route": "/user",
       "httpMethod": "POST",
